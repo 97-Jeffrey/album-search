@@ -20,7 +20,7 @@ export default function LiveSearch(props) {
     Explicit: true,
     "1900s": true,
     "2000s": true,
-    Single: false,
+    Single: true,
     EP: false
   });
 
@@ -81,7 +81,7 @@ export default function LiveSearch(props) {
           loading={search.loading}
           onSearch={term => setSearch({ ...search, term })}
         />
-        <Error show={error} onClose={event => setError(false)}>
+        <Error show={error} onClose={()=> setError(false)}>
           Oops!, something wrong in the server
         </Error>
         <Filters
