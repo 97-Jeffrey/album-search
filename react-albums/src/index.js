@@ -6,4 +6,5 @@ import "./index.css";
 
 import LiveSearch from "components/LiveSearch";
 
+
 ReactDOM.render(<LiveSearch />, document.getElementById("root"));
