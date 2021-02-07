@@ -82,7 +82,7 @@ export default function LiveSearch(props) {
           onSearch={term => setSearch({ ...search, term })}
         />
         <Error show={error} onClose={event => setError(false)}>
-          The server returned an error.
+          Oops!, something wrong in the server
         </Error>
         <Filters
           filters={filters}
